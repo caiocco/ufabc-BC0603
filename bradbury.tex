@@ -1,0 +1,319 @@
+%%
+%% Copyright (c) 2001, 2009, 2010 The American Physical Society.
+%%
+%% See the REVTeX 4 README file for restrictions and more information.
+%%
+%To achieve the polarity reversal, several techniques have already been employed:
+%magnetic field bursts6, oscillating perpendicular magnetic fields7 and %in-plane rotating magnetic field8, among others. We decided to employ a %rotating magnetic field due to the low intensity of the applied field and %the frequency selectivity available in the process, i.e., the vortex core %will only reverse for a well-defined range of field frequencies12. It was %also noted that the gyrotropic frequency decreased for increasing values of %K.
+
+
+% This is a template for producing manuscripts for use with REVTEX 4.0
+% Copy this file to another name and then work on that file.
+% That way, you always have this original template file to use.
+%
+% Group addresses by affiliation; use superscriptaddress for long
+% author lists, or if there are many overlapping affiliations.
+% For Phys. Rev. appearance, change preprint to twocolumn.
+% Choose pra, prb, prc, prd, pre, prl, prstab, prstper, or rmp for journal
+% Add 'draft' option to mark overfull boxes with black boxes
+% Add 'showpacs' option to make PACS codes appear
+% Add 'showkeys' option to make keywords appear
+%\documentclass[aps,prb,showpacs,reprint,groupedaddress]{revtex4-1}
+%\documentclass[aps,showpacs,prl,preprint,superscriptaddress]{revtex4-1}
+% Originalmente estava assim:
+%\documentclass[nofootinbib,aps,reprint,superscriptaddress]{revtex4-1}
+% Eu resolvi deixar assim:
+\documentclass[a4paper,nofootinbib,aps,reprint,superscriptaddress]{revtex4-1}
+
+%\documentclass[showpacs,aip,apl,twocolumn,groupedaddress]{revtex4-1}
+%\documentclass[aps,showpacs,apl,twocolumn,reprint,groupedaddress]{revtex4-1}
+%\documentclass[nature,twocolumn,reprint,groupedaddress]{revtex4-1}
+% You should use BibTeX and apsrev.bst for references
+% Choosing a journal automatically selects the correct APS
+% BibTeX style file (bst file), so only uncomment the line
+% below if necessary.
+\bibliographystyle{apsrev4-1}
+
+\usepackage{graphicx}
+%\usepackage{mathscr}
+\usepackage{amsmath,amsfonts}
+\usepackage{xcolor}
+\usepackage{lineno}
+\definecolor{Red}{rgb}{0.9,0.0,0.1}
+\definecolor{Blue}{rgb}{0.1,0.1,0.9}
+%\usepackage{tabulary}
+%\usepackage{subfigure}%
+\hyphenation{ma-the-ma-tics e-qui-li-bri-um Bourdieu Ginzburg Adorno Lacey Bradbury Latour Mauss Rosenberg}
+
+\usepackage[brazil]{babel}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{natbib}
+\usepackage[autostyle]{csquotes}  
+
+\makeatletter
+\newcommand*{\citenst}[2][]{%
+  \begingroup
+  \let\NAT@mbox=\mbox
+  \let\@cite\NAT@citenum
+  \let\NAT@space\NAT@spacechar
+  \let\NAT@super@kern\relax
+  \renewcommand\NAT@open{[}%
+  \renewcommand\NAT@close{]}%
+  \cite[#1]{#2}%
+  \endgroup
+}
+\makeatother
+
+\listfiles
+
+\begin{document}
+%\linenumbers
+% Use the \preprint command to place your local institutional report
+% number in the upper righthand corner of the title page in preprint mode.
+% Multiple \preprint commands are allowed.
+% Use the 'preprintnumbers' class option to override journal defaults
+% to display numbers if necessary
+%\preprint{}
+
+%Title of paper
+\title{Pensamento crítico em meio às chamas}
+
+% repeat the \author .. \affiliation etc. as needed
+% \email, \thanks, \homepage, \altaffiliation all apply to the current
+% author. Explanatory text should go in the []'s, actual e-mail
+% address or url should go in the {}'s for \email and \homepage.
+% Please use the appropriate macro foreach each type of information
+
+% \affiliation command applies to all authors since the last
+% \affiliation command. The \affiliation command should follow the
+% other information
+% \affiliation can be followed by \email, \homepage, \thanks as well.
+%\author{}
+
+\affiliation{Fundação Universidade Federal do ABC, Centro de Engenharia, Modelagem e Ciências Sociais Aplicadas, São Bernardo do Campo-SP, Brasil}
+
+\author{Caio César Carvalho Ortega}
+\email[Autor para o qual a correspondência deve ser endereçada: ]{caio.ortega@aluno.ufabc.edu.br\-}
+
+
+
+
+%\date{\today}
+
+\begin{abstract}
+O presente trabalho apresenta uma resenha de \pageref{LastPage} páginas do livro Fahrenheit 451, de Ray Bradbury, na qual serão feitas oportunas associações da obra literária com o conteúdo do curso de Ciência, Tecnologia e Sociedade, buscando responder a seguinte pergunta: \textquotedblleft como o livro ajuda a pensar a disciplina?\textquotedblright.
+\end{abstract}
+
+\maketitle
+
+% Não faz sentido ter uma seção, é apenas uma resenha!
+\section{Prólogo}
+
+% Consigo pensar em Adorno.
+% Consigo pensar em Hobbes, mas fica complicado citar...
+
+% Citar Lacey - /home/caio/Arquivos/Cursos/UFABC/BCH/2015-2q/Ciencia_Tecnologia_Sociedade/aula05/Lacey (2009).pdf
+% Dá pra falar em Ginzburg, usando a página 19 do PDF - /home/caio/Arquivos/Cursos/UFABC/BCH/2015-2q/Ciencia_Tecnologia_Sociedade/aula06/Ginsburg (1983) Sinais e Raizes de Um Paradigma Indiciario.pdf
+% Podemos falar em Merton para tratar da quest\textbf{}ão da ciência - /home/caio/Arquivos/Cursos/UFABC/BCH/2015-2q/Ciencia_Tecnologia_Sociedade/aula07/Merton (1942).pdf
+% Podemos falar em Kuhn para reforçar a prática da "ciência normal" - /home/caio/Arquivos/Cursos/UFABC/BCH/2015-2q/Ciencia_Tecnologia_Sociedade/aula08/Kuhn (1963).pdf
+% Bloor pode ser citado também - /home/caio/Arquivos/Cursos/UFABC/BCH/2015-2q/Ciencia_Tecnologia_Sociedade/aula09/Bloor (1976) Cap. _corrigido.pdf
+% A ideia da "caixa preta" de Latour pode ser conveniente também /home/caio/Arquivos/Cursos/UFABC/BCH/2015-2q/Ciencia_Tecnologia_Sociedade/aula10/LATOUR, Bruno. Ciência em Ação - Como seguir cientistas sociedade afora.pdf
+
+Fahrenheit 451\cite{Bradbury:2009}, um romance publicado em 1953, cujo autor é Ray Bradbury, escritor norte-americano, narra uma ficção científica distópica. Assim como outras leituras sugeridas, a trama descreve uma sociedade baseada nos seguintes pilares:
+\begin{itemize}
+	\item Governo totalitário;
+	\item Presença de uma forte indústria cultural;
+	\item Extinção das ciências humanas;
+	\item Controle social obscurecido por meio da tecnologia.
+\end{itemize}
+
+No contexto da disciplina, considero que a relação com os conceitos abordados talvez não seja tão intensa quanto imaginei que seria quando iniciei a leitura, contudo, foi possível aproveitar o enredo para extrair e analisar algumas passagens; adicionalmente, considerei inevitável a elaboração de relações para autores como Theodor Adorno, cuja discussão de torna mais voltada ao caráter social e identitário daquela sociedade ficcional.
+
+% uma imagem da capa, para enriquecer e fornecer um apelo gráfico
+% dicas em https://pt.sharelatex.com/learn/Inserting_Images
+\begin{figure}[h]
+	\caption{Capa do livro}
+	\includegraphics[scale=0.35]{451_capa.png}
+\end{figure}
+
+
+\section{Análise crítica}
+
+O fio condutor da estória é o bombeiro Guy Montag, que ao ser abordado por sua vizinha Clarisse, começa a iniciar um processo reflexivo acerca da sociedade na qual está inserido. De forma um tanto apressada, Montag passa de um agente do aparelho repressor a um subversivo e fugitivo, impelido pelo próprio desconforto, que parece sufocá-lo como ser humano, o outrora incendiário se torna um questionador.
+
+Em meio à agonia de Montag, um personagem notório é Beatty, seu chefe. Existe um dualismo marcado por certa intelectualidade e rancor, que se desdobra com citações que envolvem até mesmo autores consagrados como Shakespeare. A erudição de Beatty é usada para justificar a repressão e a manutenção do \textit{status quo}. As descrições mais precisas e nuas daquela sociedade são dadas por Beatty ainda no início, quando Montag começa a questionar se poderia continuar a ser um bombeiro.
+
+Uma noção que está evidente na distopia de Bradbury é dada por Adorno\cite{Adorno:1980}, para o qual o consumidor não passa de um objeto da indústria cultural, ainda que a própria o queira fazer crer que ele é sujeito do processo. Beatty abaixo, parece corresponder perfeitamente à afirmação de Adorno\cite{Adorno:1980} onde a indústria cultural \enquote{impede a formação de indíviduos autônomos, independentes, capazes de julgar e de decidir conscientemente}:
+
+\blockcquote{Bradbury:2009}{Acelere o filme, Montag, rápido. Clique, Fotografe, Olhe, Observe, Filme, Aqui, Ali, Depressa, Passe, Suba, Desça, Entre, Saia, Por Quê, Como, Quem, O Quê, Onde, Hein? Ui! Bum! Tchan! Póin, Pim, Pam, Pum! Resumos de resumos, resumos de resumos de resumos. Política? Uma coluna, duas frases, uma manchete! Depois, no ar, tudo se dissolve! A mente humana entra em turbilhão sob as mãos dos editores, exploradores, locutores de rádio, tão depressa que a centrífuga joga fora todo pensamento desnecessário, desperdiçador de tempo!}
+
+A dominação exercida pela cultura é exemplificada ao longo do enredo pelo comportamento de Mildred, esposa de Montag. A companheira de Guy é praticamente uma escrava das telas \footnote{Uma espécie televisor de grandes dimensões, que ocupa uma parede inteira} e das conchas \footnote{Concha ou rádio-concha é uma espécie de rádio miniaturizado, que deve ser inserido no aparelho auditivo}, sendo utilizada estrategicamente para exemplificar a relação de dependência e submissão aos produtos que a indústria cultural produz. Ela não apresenta um comportamento autêntico ou crítico, sendo incapaz de lembrar como conheceu seu marido ou mesmo de manter um diálogo demorado com ele. Sua família são as pessoas que aparecem nas três telas instaladas no salão da residência\footnote{Um exemplo de dependência e falta de pensamento crítico se dá quando Mildred pede a Montag uma quarta tela, ao custo de 2 mil dólares ou um terço do salário de Guy}.
+
+E mesmo que Beatty tentasse imprimir um ritmo frenético, rico e feliz àquela sociedade, a estória exibe que a felicidade não era nada além de uma farsa: a família não passava de um programa interativo exibido em uma ou mais telas; a educação era massante e inibia a criação de consciência, além de limitar o raciocínio; as pessoas tinham problemas para dormir, recorrendo a pílulas, com casos de overdose em ascensão (Mildred, por exemplo, toma todo um frasco sem perceber); abortos eram comuns; a imprudência ao volante e as altas velocidades, uma constante.
+
+Outra exemplificação da dominação exercida pelo conjunto tecnologia e cultura de massa é feita por Beatty:
+
+\blockcquote{Bradbury:2009}{Horas de folga, sim. Mas e tempo para pensar? Quando você não está dirigindo a cento e sessenta por hora, numa velocidade em que não consegue pensar em outra coisa senão no perigo, está praticando algum jogo ou sentado em algum salão onde não pode discutir com o televisor de quatro paredes. Por quê? O televisor é “real”. É imediato, tem dimensão. Diz o que você deve pensar e o bombardeia com isso. Ele tem que ter razão. Ele parece ter muita razão. Ele o leva tão depressa às conclusões que sua cabeça não tem tempo para protestar: “Isso é bobagem!”.}
+
+Mesmo aparentando consciência, Beatty exalta aquela sociedade imersa na ilusão. Descortinam-se ao longo do romance indícios de que toda aquela tecnologia existente não foi concebida cuidadosamente. As práticas tecnocientíficas claramente não gozavam do grau de autonomia necessário para serem benéficas ou, ao menos, não serem tão nocivas.
+
+Para Lacey\cite{Lacey:2006}, a adoção de inovações tecnocientíficas estaria submetida às recomendações do princípio da precaução. Com base nele, Hugh Lacey defende a autonomia da ciência, buscando evitar a subordinação a valores comerciais e políticos, o que potencializa a realização de pesquisa detalhada e de largo alcance sobre os riscos das inovações:
+
+\blockcquote{Lacey:2006}{O princípio de precaução representa uma posição que pode ser tomada com respeito à aplicação do conhecimento tecnocientífico. Enquanto tal, ele incorpora vários valores éticos concernentes aos direitos humanos (no sentido amplo da Declaração Universal dos Direitos Humanos das Nações Unidas), eqüidade intrageracional e intergeracional, responsabilidade ambiental, desenvolvimento sustentável e democracia deliberativa (cf. Comest, 2005). Esses valores informam avaliações da seriedade dos riscos e, portanto, de qual deve ser o nosso nível de confiança de que um dano potencial pode ser adequadamente evitado ou regulado. A elaboração responsável dessas avaliações requer a pesquisa, entre outras coisas, dos riscos sociais ou ecológicos, assim como acerca do potencial das práticas alternativas que podem não estar profundamente enraizadas na tecnociência; desse modo, a pesquisa requer tipicamente enfoques metodológicos que não podem estar exclusivamente restritos ao tipo de enfoque empregado na pesquisa que gera inovações tecnocientíficas. O princípio de precaução apresenta assim duas propostas inter-relacionadas, uma que recomenda cautela face à aplicação tecnológica de resultados científicos bem confirmados, a outra que enfatiza a importância de empreender investigação em áreas comumente pouco pesquisadas.}
+
+Um grande vazio existencial era alimentado, portanto. Enquanto Montag aparenta certo antagonismo em relação a Beatty, os dois parecem ter algo em comum: se são capazes de refletir, então significa que não puderam controlar a curiosidade em torno dos livros, ademais, estavam em conflito permanente, pois o raciocínio impunha duras conclusões, as relações humanas haviam sido quase que arruinadas. A julgar pelas citações de Beatty, ele aparenta ter uma verdadeira biblioteca em sua casa.
+
+% citação com base na página 19 do PDF sobre Bourdieu de CTS
+A sociedade ficcional retratada na obra de Bradbury havia eliminado por completo as ciências humanas; o leitor acaba por descobrir ao longo da leitura que Cambridge havia se tornado uma escola de engenharia nuclear e que uma disciplina sobre ética não era nada mais do que um ramo arcaico do conhecimento. Bourdieu\cite{Bourdieu:2004} argumentava que \textquotedblleft é preciso escapar à alternativa da \textquoteleft ciência pura\textquoteright, totalmente livre de qualquer necessidade social, e da \textquoteleft ciência escrava\textquoteright, sujeita a todas as demandas político-econômicas. O campo científico é um mundo social e, como tal, faz imposições, solicitações etc., que são, no entanto, relativamente independentes das pressões do mundo social global que o envolve\textquotedblright. % extração da página 21 a seguir:
+Pierre Bourdieu também afirmava que a ciência, enquanto campo, é um campo de forças e um campo de lutas para transformar esse campo de forças\cite{Bourdieu:2004}.
+
+\blockcquote{Bradbury:2009}{Mais esporte para todos, espírito de grupo, diversão, e não se tem de pensar, não é? Organizar, tornar a organizar e superorganizar super-superesportes. Mais ilustrações nos livros. Mais figuras. A mente bebe cada vez menos. Impaciência. Rodovias cheias de multidões que vão pra cá, pra lá, a toda parte, a parte alguma. Os refugiados da gasolina. Cidades se tornam motéis, as populações em surtos nômades, de um lugar para o outro, acompanhando as fases da lua, vivendo esta noite no quarto onde você dormiu hoje ao meio-dia e eu a noite passada.}
+
+Para Beatty, a transformação da sociedade com a qual Montag começava a se sentir cada vez menos pertencedor havia ocorrido naturalmente, argumentava que, \enquote{a coisa não veio do governo. Não houve nenhum decreto, nenhuma declaração, nenhuma censura como ponto de partida. Não! A tecnologia, a exploração das massas e a pressão das minorias realizaram a façanha, graças a Deus. Hoje, graças a elas, você pode ficar o tempo todo feliz, você pode ler os quadrinhos, as boas e velhas confissões ou os periódicos profissionais}\cite{Bradbury:2009}
+
+% citando agora Bourdieu, mas de IC, página 9
+Outro aspecto interessante sobre Beatty e talvez outros personagens, estes em menor escala de protagonismo, é uma escancarada dificuldade de compreensão. Para Bourdieu, \enquote{a obra de arte só adquire sentido e só tem interesse para quem é dotado do código segundo qual ela é codificada. A operação, consciente ou inconsciente, do sistema de esquemas de percepção e apreciação, mais ou menos explícitos, que constitui uma cultura pictórica ou musical é a condição dissumulada desta forma elementar de conhecimento que é o reconhecimento dos estilos.}\cite{Bourdieu:2006}. O rancor de Beatty, elemento marcante de sua personalidade, parece justificado a partir daí, o amargo chefe dos bombeiros é retratado como uma espécie de vítima notória do achatamento cultural e intelectual; transita entre justificativa e agonia, seu desdém da literatura é teatral, performático. Nega os livros se apoiando em trechos de obras e autores, sem qualquer pudor ou intimidação, cita-os orgulhosamente. Ainda assim, sobre os livros, ele afirmava que \enquote{não dizem nada! Nada que se possa ensinar ou em que se possa acreditar. Quando é ficção, é sobre pessoas inexistentes, invenções da imaginação. Caso contrário, é pior: um professor chamando outro de idiota, um filósofo gritando mais alto que seu adversário. Todos eles correndo, apagando as estrelas e extinguindo o sol. Você fica perdido}\cite{Bradbury:2009}. Quando Beatty fala sobre professores se insultando, torna-se oportuno aplicar Latour\cite{Latour:2000}, que expõe o seguinte exemplo a respeito das disputas entre cientistas:
+
+% página 24 - Latour
+\blockcquote{Latour:2000}{Se há uma \textquotedblleft incrível coincidência\textquotedblright, ela está no fato de as críticas à descoberta de Schally partirem mais uma vez de seu velho adversário, Dr. Guillemin \dots Quanto à homonímia estrutural entre a hemoglobina e o GHRH, e daí? Isso não prova que Schally tenha confundindo um contaminante com um hormônio genuíno, do mesmo modo como ninguém confundiria \textquotedblleft ter acessos\textquotedblright com \textquotedblleft estar aceso\textquotedblright.}
+
+% página 34 - Latour
+Ainda sobre Latour, este destaca a importância da \textquotedblleft arregimentação de aliados e do assestamento de muitas referências\textquotedblright\cite{Latour:2000}. Talvez Beatty esperasse um processo científico sem controvérsias e dúvidas, não podendo ocultar de Montag sua frustração. Para Bruno Latour, \enquote{"o \textquoteleft homem comum que por acaso atine com a verdade\textquoteright, como ingenuinamente postulava Galileu, não terá chance de vencer milhares de artigos, editores, partidários e patrocinadores que se oponham às suas afirmações. A força da retórica está em fazer o discordante sentir-se sozinho.}\cite{Latour:2000}
+
+Personagens como Guy Montag e Clarisse McClellan, principalmente a última, ao começarem a apresentar um comportamento dissonante em relação à massa que ocupa as cidades e reage aos estímulos sonoros e visuais das conchas e telas, passam a questionar também o \textit{habitus} vigente, que variam \enquote{não simpĺesmente com os indivíduos e suas limitações, variam sobretudo com as sociedades, as educações, as conviências e as modas, os prestígios}\cite{Mauss:2003}. O pensamento crítico não é bem visto, qualquer inconveniência causada pelo ato de pensar, ainda que numa escala milimétrica, pode resultar em punição.
+
+% página 19 (177) - Ginzburg
+O rompimento que Montag experimenta com aquela sociedade torna conveniente uma relação com Ginzburg, para o qual \enquote{o mesmo paradigma indiciário usado para elaborar formas de controle social sempre mais sutis e minuciosas pode se converter num instrumento para dissolver as névoas da ideologia que, cada vez mais, obscurecem uma estrutura social como a do capitalismo maduro}\cite{Ginzburg:1986}.
+
+% página 26 (270) do Rosenberg
+Para Rosenberg, \enquote{as sociedades industrializadas criaram um vasto domínio tecnológico muito estreitamente moldado por necessidades e incentivos econômicos. Esse domínio tecnológico, por seu turno, proporciona numerosos meios pelos quais a vida cotidiana se tornou extremamente ligada à ciência}\cite{Rosenberg:1982}, e o que vemos em Fahrenheit 451 é uma dependência muito forte de alguns frutos da ciência, contudo, sem contrapartida com as implicações sociais. Mesmo a guerra é enxergada com indiferença, ainda que o aparato bélico envolva física nuclear.
+
+\section{Relação com a disciplina}
+
+Com relação à questão \textbf{\enquote{como o livro ajuda a pensar a disciplina?}}, o livro é útil para estabelecer paralelos envolvendo os autores do conteúdo programático, bem como as abordagens realizadas em sala de aula. A obra de ficção explora aspectos sociais, científicos e tecnológicos, enquanto a disciplina apresentou conceitos e paradigmas que puderam ser utilizados não só para compreender a obra, mas também refletir a respeito dela.
+
+O livro (no contexto do exercício proposto), serve para aproximar o aluno do conteúdo, bem como estimulá-lo a desenvolver uma capacidade analítica e comparativa. O livro é de rápida leitura, sendo objetivo nos detalhes que fornece ao longo do enredo, mas com personagens-chave, os quais, por sua vez, permitem ancorar comparações e reflexões acerca daquela sociedade construída pelo autor.
+
+\section{Conclusão}
+
+Considero que a obra apresenta uma relação de cunho mais indireto com a disciplina, ou seja, as relações que identifiquei ao longo da leitura não estavam explícitas, além do mais, conforme o autor revela no posfácio, o romance foi feito em poucos dias na UCLA\footnote{\textit{University of California, Los Angeles}}, tendo sido concebido como um folhetim desde o princípio, logo, denunciando que a proposta não era um romance denso, tanto é que, apesar de personagens interessantes, com traços fantásticos e que prendem a atenção do leitor, o enredo se desdobra depressa.
+
+Ao contrário de outras leituras sugeridas, não existe um detalhamento rico sobre a tecnologia existente. O autor cita automóveis e trens metropolitanos a jato, pílulas para dormir, robôs, máquinas e eletrodomésticos. Não existe a preocupação em proporcionar ao leitor a construção de um ambiente extremamente rico, marcado por um número elevado de detalhes. Os elementos que compõem os ambientes (como cômodos de imóveis e detalhes do urbano) ou traços do cotidiano (como rotinas e afazeres) parecem se resumir ao que é imprescindível.
+
+O aspecto que mais me atraiu foram as estruturas daquela sociedade. Cada revelação feita por Beatty era como um convite à reflexão, sempre permitindo traçar paralelos entre o mundo ficcional e o mundo real, um exemplo corriqueiro foram as mídias sociais: no Twitter, uma publicação não pode ultrapassar 140 caracteres.
+
+Fahrenheit 451 é uma leitura recomendada para aqueles que querem transitar entre as humanidades e a ficção científica, sem uma dose excessiva de ciência e tecnologia, entretanto, estes dois últimos fatores nunca se dissociam do primeiro campo.
+
+%\bibliographystyle{unsrt}
+%\bibliography{Nanomagnetism}
+
+\begin{thebibliography}{31}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+%
+\bibitem [{\citenamefont {Bradbury}(2012)}]{Bradbury:2009}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Ray}\ \bibnamefont
+  {Bradbury}},\ }\href@noop {} {\emph {\bibinfo {title} {Fahrenheit 451: a temperatura na qual o papel do livro pega fogo e queima - 2. ed.}}}\ (\bibinfo  {publisher} {Editora Globo},\ \bibinfo {address} {São Paulo},\ \bibinfo {year} {2012})\BibitemShut {NoStop}%
+%
+%
+\bibitem [{\citenamefont {Adorno}(1980)}]{Adorno:1980}%
+\BibitemOpen
+\bibfield  {author} {\bibinfo {author} {\bibfnamefont {Theodor}\ \bibnamefont
+		{Adorno}},\ }\href@noop {} {\emph {\bibinfo {title} {A Indústria Cultural In: Grandes Cientistas Sociais, p. 92-99}}}\ (\bibinfo  {publisher} {Ática},\ \bibinfo {address} {São Paulo},\ \bibinfo {year} {1980})\BibitemShut {NoStop}%
+%
+%
+\bibitem [{\citenamefont {Lacey}(2006)}]{Lacey:2006}%
+\BibitemOpen
+\bibfield  {author} {\bibinfo {author} {\bibfnamefont {Hugh}\ \bibnamefont
+		{Lacey}},\ }\href@noop {} {\emph {\bibinfo {title} {O princípio de precaução e a autonomia da ciência, Scientiae Studia v.4, n. 3, p. 373-92}}}\ (\bibinfo  {publisher} {Scielo},\ \bibinfo {address} {São Paulo},\ \bibinfo {year} {2006})\BibitemShut {NoStop}%
+%
+%
+\bibitem [{\citenamefont {Bourdieu}(2004)}]{Bourdieu:2004}%
+\BibitemOpen
+\bibfield  {author} {\bibinfo {author} {\bibfnamefont {Pierre}\ \bibnamefont
+		{Bourdieu}},\ }\href@noop {} {\emph {\bibinfo {title} {Os usos sociais da ciência: por uma sociologia clínica do campo científico, p. 19-21}}}\ (\bibinfo  {publisher} {Editora UNESP},\ \bibinfo {address} {São Paulo},\ \bibinfo {year} {2004})\BibitemShut {NoStop}%
+%
+%
+\bibitem [{\citenamefont {Bourdieu}(2006)}]{Bourdieu:2006}%
+\BibitemOpen
+\bibfield  {author} {\bibinfo {author} {\bibfnamefont {Pierre}\ \bibnamefont
+		{Bourdieu}},\ }\href@noop {} {\emph {\bibinfo {title} {A Distinção: crítica social do julgamento, p. 9}}}\ (\bibinfo  {publisher} {Edusp},\ \bibinfo {address} {São Paulo},\ \bibinfo {year} {2006})\BibitemShut {NoStop}%
+%
+%
+\bibitem [{\citenamefont {Latour}(2000)}]{Latour:2000}%
+\BibitemOpen
+\bibfield  {author} {\bibinfo {author} {\bibfnamefont {Bruno}\ \bibnamefont
+		{Latour}},\ }\href@noop {} {\emph {\bibinfo {title} {Ciência em ação: como seguir cientistas e engenheiros sociedade afora, p. 24-38}}}\ (\bibinfo  {publisher} {Editora UNESP},\ \bibinfo {address} {São Paulo},\ \bibinfo {year} {2000})\BibitemShut {NoStop}%
+%
+%
+\bibitem [{\citenamefont {Mauss}(2003)}]{Mauss:2003}%
+\BibitemOpen
+\bibfield  {author} {\bibinfo {author} {\bibfnamefont {Marcel}\ \bibnamefont
+		{Mauss}},\ }\href@noop {} {\emph {\bibinfo {title} {Sociologia e Antropologia, p. 404}}}\ (\bibinfo  {publisher} {Cosac \& Naify},\ \bibinfo {address} {São Paulo},\ \bibinfo {year} {2003})\BibitemShut {NoStop}%
+%
+%
+\bibitem [{\citenamefont {Rosenberg}(1982)}]{Rosenberg:1982}%
+\BibitemOpen
+\bibfield  {author} {\bibinfo {author} {\bibfnamefont {Nathan}\ \bibnamefont
+		{Rosenberg}},\ }\href@noop {} {\emph {\bibinfo {title} {Por dentro da caixa-preta, p. 270-271}}}\ (\bibinfo  {publisher} {Editora da Unicamp},\ \bibinfo {address} {Campinas},\ \bibinfo {year} {1982})\BibitemShut {NoStop}%
+%
+%
+\bibitem [{\citenamefont {Ginzburg}(1986)}]{Ginzburg:1986}%
+\BibitemOpen
+\bibfield  {author} {\bibinfo {author} {\bibfnamefont {Carlo}\ \bibnamefont
+		{Ginzburg}},\ }\href@noop {} {\emph {\bibinfo {title} {Sinais: Raízes de um paradigma indiciário In. Mitos, Emblemas, Sinais, p. 177}}}\ (\bibinfo  {publisher} {Companhia das Letras},\ \bibinfo {address} {São Paulo},\ \bibinfo {year} {2003})\BibitemShut {NoStop}%
+%
+%
+\end{thebibliography}%
+
+
+
+
+\end{document}
+
+
